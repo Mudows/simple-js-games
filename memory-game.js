@@ -63,7 +63,7 @@ const cardArray = [
 cardArray.sort(() => 0.5 - Math.random());
 
 const gridDisplay = document.querySelector("#grid");
-const resultDisplay = document.querySelector("#mem-result")
+const resultDisplay = document.querySelector("#mem-result");
 let cardsChosen = [];
 let cardsChosenIds = [];
 const cardsWon = [];
@@ -107,8 +107,8 @@ function checkMatch() {
   cardsChosen = [];
   cardsChosenIds = [];
 
-  if (cardsWon.length == cardArray.length/2){
-      resultDisplay.textContent = 'You win!'
+  if (cardsWon.length == cardArray.length / 2) {
+    resultDisplay.textContent = "You win!";
   }
 }
 
