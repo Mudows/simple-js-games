@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Rock, Paper or Scissors</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple JS Games</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!----------------------------------------------->
+    <!------------ ROCK, PAPER, SCISSORS ------------>
+    <!----------------------------------------------->
 
-    <h2>Computer Choice: <span id="cpu-choice"></span></h2>
+    <h1>Rock, Paper, Scissors</h1>
+    <h2>CPU Choice: <span id="cpu-choice"></span></h2>
     <h2>Your Choice: <span id="plr-choice"></span></h2>
     <h2>Result: <span id="result"></span></h2>
 
@@ -14,6 +19,22 @@
     <button id="paper">Paper</button>
     <button id="scissors">Scissors</button>
 
-    <script src="app.js" charset="utf-8"></script>
-</body>
+    <br />
+    <hr />
+    <br />
+    
+    <!------------------------------------->
+    <!------------ MEMORY GAME ------------>
+    <!------------------------------------->
+
+    <h1>Memory Game</h1>
+
+    <h3>Score: <span id="mem-result"></span></h3>
+
+    <div id="grid"></div>
+
+
+    <script src="memory-game.js" charset="utf-8"></script>
+    <script src="rps-game.js" charset="utf-8"></script>
+  </body>
 </html>
