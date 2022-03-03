@@ -3,4 +3,4 @@ These are simple JavaScript games that I'm making for JS practice. I'm using the
 
 Wanna play them? http://mudowssamplegames.infinityfreeapp.com/
 
-Enjoy!Click Here!
+Enjoy!
