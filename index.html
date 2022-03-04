@@ -6,46 +6,63 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <!----------------------------------------------->
-    <!------------ ROCK, PAPER, SCISSORS ------------>
-    <!----------------------------------------------->
-    <div class="container">
-      <div class="game-box">
-        <h1>Rock, Paper, Scissors</h1>
-        <h2>CPU Choice: <span id="cpu-choice"></span></h2>
-        <h2>Your Choice: <span id="plr-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
+    <main class="container">
+      <!----------------------------------------------->
+      <!------------ ROCK, PAPER, SCISSORS ------------>
+      <!----------------------------------------------->
+      <article class="game-box">
+        <h1>[Rock-Paper-Scissors]</h1>
+        <section id="rps-game">
+          <div>
+            <h2 class="rps-info">
+              YOU:<br />
+              <span id="plr-choice">Choose...</span>
+            </h2>
+          </div>
+          <div>
+            <h2 class="rps-info">
+              Result:<br />
+              <span id="result">Win or lose?</span>
+            </h2>
+          </div>
+          <div>
+            <h2 class="rps-info">
+              CPU Choice:<br />
+              <span id="cpu-choice">Try me!</span>
+            </h2>
+          </div>
+        </section>
+        <nav class="rps-buttons">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </nav>
+      </article>
 
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-      </div>
-
-      <br />
       <hr />
-      <br />
 
       <!------------------------------------->
       <!------------ MEMORY GAME ------------>
       <!------------------------------------->
+      <section class="game-box">
+        <h1>[Memory Game]</h1>
 
-      <h1>Memory Game</h1>
+        <h3>Score: <span id="mem-result"></span></h3>
 
-      <h3>Score: <span id="mem-result"></span></h3>
+        <div id="grid"></div>
+      </section>
 
-      <div id="grid"></div>
-
-      <br />
       <hr />
-      <br />
+
       <!------------------------------------->
       <!------------ WHAC-A-MOLE ------------>
       <!------------------------------------->
+      <section class="game-box">
+        <h1>[Whac-a-Mole]</h1>
 
-      <h1>Whac-a-Mole</h1>
-
-      the game
-    </div>
+        the game
+      </section>
+    </main>
     <script src="memory-game.js" charset="utf-8"></script>
     <script src="rps-game.js" charset="utf-8"></script>
     <script src="whacamole.js" charset="utf-8"></script>
