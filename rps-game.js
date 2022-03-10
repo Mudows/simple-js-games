@@ -1,9 +1,10 @@
 const cpuChoiceDisplay = document.getElementById("cpu-choice");
 const plrChoiceDisplay = document.getElementById("plr-choice");
 const gameResultDisplay = document.getElementById("result");
-const nChoices = document.querySelectorAll("button");
+const nChoices = document.querySelectorAll('.rps-buttons');
 let plrChoice;
 let cpuChoice;
+let cpuChoiceImg;
 let gameResult;
 
 nChoices.forEach((nChoice) =>
@@ -20,17 +21,23 @@ function generateCpuChoice() {
 
   if (rndNumber === 1) {
     cpuChoice = "Rock";
+    cpuChoiceImg = document.createElement('img');
+    cpuChoiceImg.src = img/rock.png;
   }
 
   if (rndNumber === 2) {
     cpuChoice = "Paper";
+    cpuChoiceImg = document.createElement('img');
+    cpuChoiceImg.src = "img/paper.png";
   }
 
   if (rndNumber === 3) {
     cpuChoice = "Scissors";
+    cpuChoiceImg = document.createElement('img');
+    cpuChoiceImg.src = 'img/scissor.png';
   }
 
-  cpuChoiceDisplay.innerHTML = cpuChoice;
+  cpuChoiceDisplay.innerHTML = cpuChoiceImg;
 }
 
 function getResult() {
